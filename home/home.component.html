@@ -1,0 +1,149 @@
+<body>
+
+  <header>
+
+      <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+      <div class="overlay"></div>
+
+      <!-- The HTML5 video element that will create the background video on the header -->
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="assets\video.mp4" type="video/mp4">
+      </video>
+
+      <!-- The header content -->
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+            <h2 class="display-3"><span>ELYSIUM</span></h2>
+            <p class="lead mb-0">Lorem ipsum dolor sit..</p>
+            <button  type="button" style="color:  rgb(0, 185, 205);"class="btn btn-outline-info" *ngIf="!isLoggedIn"routerLink="login">Login</button >
+            <button type="button" style="color:  rgb(0, 185, 205);" class="btn btn-outline-info" *ngIf="isLoggedIn" routerLink="profile">Profile</button>
+            </div>
+        </div>
+      </div>
+    </header>
+
+
+
+
+
+
+  <div class="container">
+    <h1 class="mt-3">Descubra um Universo de Jogos</h1>
+
+    <img src="assets\image (15).png" alt="Imagem" class="img-fluid">
+    <p class="mb-3">Junte-se a nós no Mundo dos Jogos e mergulhe em uma experiência inigualável de diversão, competição e camaradagem. Não importa se você é um jogador casual ou um competidor ávido, temos algo para todos. Explore nossos recursos, faça novos amigos, melhore suas habilidades e torne-se parte de uma comunidade vibrante de jogadores.
+
+    </p>
+    <a href="#" class="btn1">Botão</a>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!--Reviews Section-->
+      <section class="featured-games-section">
+          <div class="bottom-pattern-layer"style="background-image: url(assets/pattern-2.png);"></div>
+
+  </section>
+
+<!--Video Section-->
+<section class="video-section">
+  <div class="image-layer" style="background-image: url(assets/video-bg.jpg);"></div>
+
+  <div class="auto-container">
+      <div class="content-box wow zoomInStable" data-wow-delay="0ms" data-wow-duration="2500ms">
+        <div class="content">
+          <img src="assets\image (17).png" alt="Overlay Image">
+          <h1>Jogos</h1>
+          <p>This is a sample text below the image.</p>
+        </div>
+        </div>
+
+      </div>
+</section>
+
+<!--Featured Games Section-->
+<section class="featured-games-section">
+  <div class="top-pattern-layer" style="background-image: url(assets/pattern-1.png);"></div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- News Section -->
+<section class="news-section">
+  <div class="auto-container">
+    <!-- Sec Title -->
+    <div class="sec-title centered">
+      <div class="title">Recent Articles</div>
+      <h2>Latest Posts</h2>
+    </div>
+
+    <div class="row clearfix">
+
+      <!-- News Block -->
+      <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+        <div class="inner-box hvr-bob">
+          <div class="image">
+            <a href="blog-single.html"><img src="assets\blog_post_1.jpg" alt="" /></a>
+          </div>
+          <div class="lower-content">
+            <div class="post-date">20 may 2019</div>
+            <h3><a href="blog-single.html">important brands have given us their trust</a></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- News Block -->
+      <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+        <div class="inner-box hvr-bob">
+          <div class="image">
+            <a href="blog-single.html"><img src="assets\blog_post_2.jpg" alt="" /></a>
+          </div>
+          <div class="lower-content">
+            <div class="post-date">18 may 2019</div>
+            <h3><a href="blog-single.html">What happened to esports games this weekend</a></h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- News Block -->
+      <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+        <div class="inner-box hvr-bob">
+          <div class="image">
+            <a href="blog-single.html"><img src="assets\blog_post_3.jpg" alt="" /></a>
+          </div>
+          <div class="lower-content">
+            <div class="post-date">16 may 2019</div>
+            <h3><a href="blog-single.html">Lion king vs wolf smart upcoming matches</a></h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- End News Section -->
+</body>

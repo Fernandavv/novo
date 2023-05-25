@@ -1,0 +1,126 @@
+/* estilo.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .menu-toggle {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-bottom: 4px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+  
+  .menu-toggle span:nth-child(3) {
+    transform-origin: 0 100%;
+  }
+  
+  .menu-toggle input {
+    display: none;
+  }
+  
+  .menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  
+  .menu-toggle input:checked ~ span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  
+  .menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #000;
+    z-index: 999;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+  }
+  
+  #destaque {
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #destaque:hover {
+    transform: scale(1.1);
+  }
+  
+  .saiba-mais {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .saiba-mais:hover {
+    background-color: #555;
+  }
+  
+  #campeoes {
+    padding: 20px;
+  }
+  
+  .lista-campeoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .campeao {
+    margin: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .campeao:hover {
+    opacity: 0.8;
+  }
+  
